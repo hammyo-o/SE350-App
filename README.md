@@ -1,31 +1,7 @@
 # SE350-App
 
-Checklist:
+I can think of two example projects I would want to do. The first is in typescript, in case that is allowed. I'd prefer doing that choice.
 
-– Are you in a Group?
+1. An extension for [Paperback](https://apps.apple.com/us/app/paperback-comic-manga-reader/id1626613373), an IOS manga reader app. It uses custom repos/extensions created by users to parse through specific web services or websites. For example, I could make an extension for a gallery site that allows for many settings including: tag filtering, date filtering, page count filtering (if in an album), searching. This is a hard for the grader to test because the version I am running of paperback is one that is in unreleased beta (v0.9) which is a complete rework. I could record and narrate over videos of the features which would be appreciated if accepted.
 
-* No
-
-– What programming language are you selecting? Which version?
-
-* Java Version 25.0.1
-
-– Do you have your GitHub account set up?
-
-* Yes
-
-– Do you have a public repository for your Project?
-
-* Yes
-
-– What is the link to your GitHub repository?
-
-* <https://github.com/hammyo-o/SE350-App>
-
-– Do you have a “Hello World” program that compiles and runs?
-
-* Yes
-
-– Where is the entry point to your project?
-
-* src/main/Main.java
+2. A stat tracker and analyzer for [Kovaaks Aim Trainer](https://store.steampowered.com/app/824270/KovaaKs/) because I play games a lot and enjoy aim training. Aim training is an important part for many competitive gamers so knowing your progression over time is important. I could add multiple aspects like date filtering, scenario filtering, play times, reaction time, etc.
