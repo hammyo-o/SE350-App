@@ -1,6 +1,0 @@
-# Java build artifacts
-*.class
-bin/
-
-# VS Code workspace settings (optional local files)
-.vscode/

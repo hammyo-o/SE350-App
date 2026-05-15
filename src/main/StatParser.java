@@ -1,14 +1,7 @@
 import java.io.File;
 
 public class StatParser {
-    private final String defaultStatsPath = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FPSAimTrainer\\FPSAimTrainer\\stats";
-
-    public static void main(String[] args) {
-        StatParser parser = new StatParser();
-        String pathToCheck = args.length > 0 ? args[0] : parser.defaultStatsPath;
-        parser.checkLogDirectory(pathToCheck);
-    }
-
+    private String path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FPSAimTrainer\\FPSAimTrainer\\stats";
     public void checkLogDirectory(String path) {
         File folder = new File(path);
         if (!folder.exists()) {
