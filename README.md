@@ -23,7 +23,7 @@ The static and automatic files contain a ton of complex data because small nuanc
 - average FPS (frames per second) of the run, screen resolution, time paused during the run, and more
 
 To ensure you are able to run the project independently without the game, the repo contains a prepopulated directory with my actual .csv log files. The src directory will have a script that compiles the application, launches the GUI, and runs the tracker against the included data.
-### Planned Libraries (For Option 2)
+### Planned Libraries
 
 * **GUI:** TBD.
 * **OpenCSV:** For parsing local CSV export data from the game.
