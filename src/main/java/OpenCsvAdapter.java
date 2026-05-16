@@ -1,11 +1,7 @@
 import java.io.File;
-import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.opencsv.bean.CsvToBeanBuilder;
 public class OpenCsvAdapter implements DataReader {
 
     public final String defaultCsvPath = pathToCsv();
@@ -27,15 +23,46 @@ public class OpenCsvAdapter implements DataReader {
     // Fulfills the DataReader interface contract
     @Override
     public List<ScenarioStats> readData(String filePath) {
-        try (Reader reader = Files.newBufferedReader(Paths.get(filePath))) {
-            return new CsvToBeanBuilder<ScenarioStats>(reader)
-                    .withType(ScenarioStats.class)
-                    .withIgnoreLeadingWhiteSpace(true)
-                    .build()
-                    .parse();
+        List<ScenarioStats> resultList = new ArrayList<>();
+        ScenarioStats stats = new ScenarioStats();
+
+        // Use raw CSVReader instead of CsvToBeanBuilder to bypass the mixed formatting
+        try (com.opencsv.CSVReader reader = new com.opencsv.CSVReader(new java.io.FileReader(filePath))) {
+            String[] line;
+
+            while ((line = reader.readNext()) != null) {
+                if (line.length < 2 || line[0].trim().isEmpty()) {
+                    continue;
+                }
+
+                String key = line[0].trim();
+                String value = line[1].trim();
+
+                switch (key) {
+                    case "Scenario:":
+                        stats.setScenarioName(value);
+                        break;
+                    case "Score:":
+                        stats.setScore(Double.parseDouble(value));
+                        break;
+                    case "Hit Count:":
+                        stats.setHitCount(Integer.parseInt(value));
+                        break;
+                    case "Miss Count:":
+                        stats.setMissCount(Integer.parseInt(value));
+                        break;
+                }
+            }
+
+            // Add the populated object to the list
+            if (stats.getScenarioName() != null) {
+                resultList.add(stats);
+            }
+            return resultList;
+
         } catch (Exception e) {
             System.out.println("Error reading CSV: " + e.getMessage());
-            return new ArrayList<>(); // Return empty list to prevent null pointer exceptions
+            return resultList;
         }
     }
 
@@ -52,8 +79,9 @@ public class OpenCsvAdapter implements DataReader {
         OpenCsvAdapter adapter = new OpenCsvAdapter();
         String pathToCheck = args.length > 0 ? args[0] : adapter.defaultCsvPath;
         adapter.checkLogDirectory(pathToCheck);
-        
+
         // Example execution of the interface method:
-        // List<ScenarioStats> data = adapter.readData(pathToCheck + "\\example_scenario.csv");
+        // List<ScenarioStats> data = adapter.readData(pathToCheck +
+        // "\\example_scenario.csv");
     }
 }

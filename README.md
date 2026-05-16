@@ -24,18 +24,35 @@ The static and automatic files contain a ton of complex data because small nuanc
 - distance traveled, fight time, deaths, and overshots
 - scenario user pause count and duration
 
+## App UML diagram
+
+ ![UML Diagram](UML-SE350-Final-App-Hammy.png)
+
 To ensure you are able to run the project independently without the game, the repo contains a prepopulated directory with my actual .csv log files. The src directory will have a script that compiles the application, launches the GUI, and runs the tracker against the included data.
+
+### Final Submission Goal
+
+For the final submission, this application will read a directory of local example KovaaK's CSV files. It will use calculations to aggregate the player's performance data (such as average accuracy, total playtime, high scores, and improvement overtime), and display these metrics in a JavaFX Graphical User Interface (GUI). This will allow the user to visually track their aim improvement over time.
+
+### Sprint 3 Issues & Resolutions
+
+- **Git Configuration:** Some commits were accidentally made under the username `BamhamYT` instead of my primary account `hammyo-o`. I am working solo as a one-person group, and both accounts belong to me.
+
+- **Java Version Mismatch:** I got an `UnsupportedClassVersionError` when trying to execute the program via the CLI because it defaulted to an older Java 8 JRE instead of the Java 25 JDK used to compile the code. I resolved this by updating system environment variables and running through Maven (`mvn clean compile` and `mvn exec:java`).
+- **Data Parsing Complexity:** KovaaK's CSV exports are not uniform tables; they contain a mixed format of individual kill logs followed by summary statistics. This broke OpenCSV's automated `@CsvBindByName` mapping. I resolved this by no longer using the bean builder and using a raw `CSVReader` to parse the file line-by-line.
 
 ### Planned Libraries
 
-- **GUI:** TBD.
+- **GUI:** JavaFX. Not implemented yet.
 - **OpenCSV:** For parsing local CSV export data from the game.
 - **JUnit:** For unit testing metric calculations.
 
-### How to Run (Starter Code)
+### How to Run
 
-Compile to `bin`, then run with `-cp bin`:
+This project uses Maven for dependency management and execution. Do not compile manually.
+
+To clean, compile, and run the application, execute the following commands in the root directory:
 
 ```bash
-javac -d bin src/*.java
-java -cp bin Main
+mvn clean compile
+mvn exec:java "-Dexec.mainClass=Main"
