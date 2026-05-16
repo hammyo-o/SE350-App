@@ -1,0 +1,48 @@
+Kill #,Timestamp,Bot,Weapon,TTK,Shots,Hits,Accuracy,Damage Done,Damage Possible,Efficiency,Cheated,OverShots
+
+Weapon,Shots,Hits,Damage Done,Damage Possible,,Sens Scale,Horiz Sens,Vert Sens,FOV,Hide Gun,Crosshair,Crosshair Scale,Crosshair Color,ADS Sens,ADS Zoom Scale,Avg Target Scale,Avg Time Dilation
+LG,1302,490,2940.0,7812.0,
+
+Kills:,0
+Deaths:,0
+Fight Time:,0.0
+Time Remaining:,0.0
+Avg TTK:,0.0
+Damage Done:,2940.0
+Total Overshots:,0
+Damage Taken:,0.0
+Hit Count:,490
+Miss Count:,812
+Midairs:,0
+Midaired:,0
+Directs:,0
+Directed:,0
+Reloads:,0
+Distance Traveled:,0.0
+MBS Points:,0.0
+Score:,8820.0
+Scenario:,Smoothness Training 20 300%
+Hash:,3e6b070ca7dfa2f97c1fa5c9b0faa598
+Game Version:,3.9.1.2026-05-06-17-06-54-4967be094932
+Challenge Start:,22:13:36.706
+Pause Count:,0
+Pause Duration:,0
+Avg Target Scale:,1.0
+Avg Time Dilation:,1.0
+
+Input Lag:,0
+Max FPS (config):,999.0
+Sens Scale:,Valorant
+Sens Increment:,0.22773
+Horiz Sens:,0.22786
+Vert Sens:,0.22786
+DPI:,1600
+FOV:,103.0
+FOVScale:,Overwatch
+Hide Gun:,false
+Crosshair:,rxSmallCross.png
+Crosshair Scale:,1.0
+Crosshair Color:,000000FF
+Resolution:,1920x1080
+Avg FPS:,531.133301
+Resolution Scale:,100.0

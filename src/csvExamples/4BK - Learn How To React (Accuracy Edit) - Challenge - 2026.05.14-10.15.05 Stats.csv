@@ -1,0 +1,63 @@
+Kill #,Timestamp,Bot,Weapon,TTK,Shots,Hits,Accuracy,Damage Done,Damage Possible,Efficiency,Cheated,OverShots
+1,10:13:21.406,Long Strafe Bot,ADSable Hitscan Cone,2.959000s,824,773,0.938107,710.000000,750.000000,0.946667,0,10
+2,10:13:25.886,Long Strafe Bot,ADSable Hitscan Cone,4.120000s,1134,735,0.648148,695.000000,1031.000000,0.674103,0,97
+3,10:13:30.085,Long Strafe Bot,ADSable Hitscan Cone,3.879000s,1069,903,0.844715,835.000000,972.000000,0.859053,0,82
+4,10:13:35.167,Long Strafe Bot,ADSable Hitscan Cone,4.721000s,1304,946,0.725460,876.000000,1186.000000,0.738617,0,98
+5,10:13:37.308,Long Strafe Bot,ADSable Hitscan Cone,1.641000s,452,433,0.957965,400.000000,411.000000,0.973236,0,133
+6,10:13:42.205,Long Strafe Bot,ADSable Hitscan Cone,4.482000s,1242,1131,0.910628,1035.000000,1130.000000,0.915929,0,102
+7,10:13:44.207,Long Strafe Bot,ADSable Hitscan Cone,1.762000s,492,398,0.808943,369.000000,448.000000,0.823661,0,56
+8,10:13:47.687,Long Strafe Bot,ADSable Hitscan Cone,3.119000s,868,750,0.864055,707.000000,790.000000,0.894937,0,89
+9,10:13:51.328,Long Strafe Bot,ADSable Hitscan Cone,3.440000s,956,763,0.798117,708.000000,870.000000,0.813793,0,56
+10,10:14:43.122,Long Strafe Bot,ADSable Hitscan Cone,3.720000s,1033,759,0.734753,701.000000,940.000000,0.745745,0,133
+11,10:14:51.320,Long Strafe Bot,ADSable Hitscan Cone,7.681000s,2122,1501,0.707352,1401.000000,1930.000000,0.725907,0,133
+12,10:14:51.882,Long Strafe Bot,ADSable Hitscan Cone,0.038000s,21,1,0.047619,1.000000,20.000000,0.050000,0,133
+13,10:14:56.179,Long Strafe Bot,ADSable Hitscan Cone,4.079000s,1132,780,0.689046,704.000000,1030.000000,0.683495,0,47
+14,10:15:00.259,Long Strafe Bot,ADSable Hitscan Cone,3.720000s,1031,802,0.777886,737.000000,938.000000,0.785714,0,89
+15,10:15:03.898,Long Strafe Bot,ADSable Hitscan Cone,3.278000s,912,724,0.793860,668.000000,830.000000,0.804819,0,89
+
+Weapon,Shots,Hits,Damage Done,Damage Possible,,Sens Scale,Horiz Sens,Vert Sens,FOV,Hide Gun,Crosshair,Crosshair Scale,Crosshair Color,ADS Sens,ADS Zoom Scale,Avg Target Scale,Avg Time Dilation
+ADSable Hitscan Cone,15065,11713,10849.0,13706.0,
+
+Kills:,15
+Deaths:,0
+Fight Time:,52.639
+Time Remaining:,0.0
+Avg TTK:,3.998946
+Damage Done:,10849.0
+Total Overshots:,1347
+Damage Taken:,0.0
+Hit Count:,11713
+Miss Count:,3352
+Midairs:,196
+Midaired:,0
+Directs:,864
+Directed:,0
+Reloads:,0
+Distance Traveled:,11665.203125
+MBS Points:,0.0
+Score:,8587.539062
+Scenario:,4BK - Learn How To React (Accuracy Edit)
+Hash:,5ce0a914f7e4d95e97f2dd17175cce9c
+Game Version:,3.9.1.2026-05-06-17-06-54-4967be094932
+Challenge Start:,10:13:18.146
+Pause Count:,1
+Pause Duration:,47
+Avg Target Scale:,1.0
+Avg Time Dilation:,1.0
+
+Input Lag:,0
+Max FPS (config):,999.0
+Sens Scale:,Valorant
+Sens Increment:,0.199886
+Horiz Sens:,0.2
+Vert Sens:,0.2
+DPI:,1600
+FOV:,103.0
+FOVScale:,Overwatch
+Hide Gun:,false
+Crosshair:,rxSmallCross.png
+Crosshair Scale:,1.0
+Crosshair Color:,000000FF
+Resolution:,1920x1080
+Avg FPS:,394.987366
+Resolution Scale:,100.0
